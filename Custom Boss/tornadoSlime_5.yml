@@ -1,0 +1,40 @@
+isEnabled: true
+entityType: SLIME
+name: $eventBossLevel &4Tornado Gloop
+level: 200
+healthMultiplier: 3.0
+damageMultiplier: 2.0
+spawnMessage: '&cSevere weather anomalies has been detected'
+deathMessages:
+- - '&e&l---------------------------------------------'
+- '&4&aTornado Slime was killed and the weather was restored by $players!'
+- '&c&l    1st Damager: $damager1name &cwith $damager1damage damage!'
+- '&6&l    2nd Damager: $damager2name &6with $damager2damage damage!'
+- '&e&l    3rd Damager: $damager3name &ewith $damager3damage damage!'
+- '&aSlayers: $players'
+- '&e&l---------------------------------------------'
+timeout: 5 #5 Minutes
+isPersistent: true
+trails:
+damageModifiers:
+- "- material:BOW,multiplier:0.5 - material:TRIDENT,multiplier:1.5 - material:CROSSBOW,multiplier:1.5 - material:DIAMOND_SWORD,multiplier:0.5 - material:GOLDEN_SWORD,multiplier:0.5 - material:STONE_SWORD,multiplier:0.5 - material:IRON_SWORD,multiplier:0.5 - material:WOODEN_SWORD,multiplier:0.5 - material:NETHERITE_SWORD,multiplier:0.6"
+normalizedCombat: false
+followDistance: 100
+escapeMessage: "'&4The Tornado Slime has devastated the lands!'"
+locationMessage: "'&cTornado Slime: $distance blocks away!'"
+slimeSize: 5 #5 Recommended to see hp
+mountedEntity: "tornadoSlime_4.yml"
+powers: 
+- attack_vacuum.yml
+#- bullet_hell.yml
+- attack_gravity.yml
+- implosion.yml 
+- movement_speed.yml
+- gloopPowers.yml
+- invulnerability_knockback.yml
+- invulnerability_fall_damage.yml
+#- gloopPowers_lightning.yml
+#- gloopPowers_closedmg.yml
+onSpawnCommands:
+onDeathCommands:
+# Generated with https://magmaguy.com/webapp/webapp.html !

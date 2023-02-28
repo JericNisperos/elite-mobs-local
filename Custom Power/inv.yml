@@ -1,0 +1,19 @@
+powerType: UNIQUE
+eliteScript:
+  fullInvisibility:
+    Events:
+    - EliteMobSpawnEvent
+    Actions:
+    - action: POTION_EFFECT
+      Target:
+        targetType: SELF
+      potionEffectType: INVISIBILITY
+      amplifier: 255
+      duration: 6000
+    - action: POTION_EFFECT
+      Target:
+        targetType: SELF
+      potionEffectType: SPEED
+      amplifier: 50
+      duration: 6000
+# Generated with https://magmaguy.com/webapp/webapp.html !

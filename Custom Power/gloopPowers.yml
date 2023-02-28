@@ -1,0 +1,40 @@
+powerType: UNIQUE
+eliteScript:
+  tornadoPull:
+    Events:
+    - EliteMobEnterCombatEvent
+    - EliteMobTargetPlayerEvent
+    - EliteMobSpawnEvent
+    Conditions:
+      conditionType: FILTERING
+      isOnFloor: true
+      Target:
+        targetType: NEARBY_PLAYERS
+    Actions:
+    - action: PUSH
+      Target:
+        targetType: NEARBY_PLAYERS
+        range: 5
+      wait: 20
+      times: 10
+      repeatEvery: 40
+      vValue: 0, 0.7, 0
+    - action: STRIKE_LIGHTNING
+      Target:
+        targetType: NEARBY_PLAYERS
+        range: 20
+      wait: 20
+      repeatEvery: 120
+      times: 3
+    - action: DAMAGE
+      multiplier: 1.2
+      Target:
+        targetType: NEARBY_PLAYERS
+        range: 20
+      wait: 20
+      repeatEvery: 120
+      times: 3
+    Cooldowns:
+      local: 20
+      global: 1
+# Generated with https://magmaguy.com/webapp/webapp.html !

@@ -1,0 +1,10 @@
+eliteScript:
+  thunderrr:
+    Events:
+    - EliteMobSpawnEvent
+    Actions:
+    - action: SET_WEATHER
+      Target:
+        targetType: SELF
+      weather: THUNDER
+      duration: 6000

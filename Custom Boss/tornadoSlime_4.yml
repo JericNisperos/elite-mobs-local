@@ -1,0 +1,22 @@
+isEnabled: true
+entityType: SLIME
+name: $eventBossLevel &4gloop
+level: 200
+isPersistent: true
+healthMultiplier: 3.0
+damageMultiplier: 2.5
+trails:
+followDistance: 100
+mountedEntity: "tornadoSlime_3.yml"
+damageModifiers:
+- "- material:BOW,multiplier:0.5 - material:TRIDENT,multiplier:1.5 - material:CROSSBOW,multiplier:1.5 - material:DIAMOND_SWORD,multiplier:0.5 - material:GOLDEN_SWORD,multiplier:0.5 - material:STONE_SWORD,multiplier:0.5 - material:IRON_SWORD,multiplier:0.5 - material:WOODEN_SWORD,multiplier:0.5 - material:NETHERITE_SWORD,multiplier:0.6"
+slimeSize: 4
+powers: 
+#- bullet_hell.yml
+- attack_gravity.yml
+- attack_vacuum.yml
+- implosion.yml
+- movement_speed.yml
+- gloopPowers.yml
+- invulnerability_knockback.yml
+- invulnerability_fall_damage.yml

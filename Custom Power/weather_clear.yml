@@ -1,0 +1,10 @@
+eliteScript:
+  clearrr:
+    Events:
+    - EliteMobDeathEvent
+    Actions:
+    - action: SET_WEATHER
+      Target:
+        targetType: SELF
+      weather: CLEAR
+      duration: 6000
